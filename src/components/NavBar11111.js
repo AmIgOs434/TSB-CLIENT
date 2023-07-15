@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 import { FESHION_ROUTE,BASKET_ROUTE ,ADMIN_ROUTE,LOVE_ROUTE} from '../utils/consts';
 import { LOGIN_ROUTE} from "../utils/consts";
 
-import {Context} from "../index";
+import {Context} from "../index"
 import  { useContext} from 'react';
 import jwt_decode from "jwt-decode";
 function NavBar() {
