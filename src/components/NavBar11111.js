@@ -288,11 +288,11 @@ $(window).scroll(function() {
       </li> */}
 
 
-      <li><a href="basket"><i class="fa fa-suitcase"></i> <div class='home'>Корзина </div></a></li>
-      <li><a href="love"><i class="fa fa-heart"></i><div class='home'>Любимые </div> </a>
+      <li><a href="/basket"><i class="fa fa-suitcase"></i> <div class='home'>Корзина </div></a></li>
+      <li><a href="/love"><i class="fa fa-heart"></i><div class='home'>Любимые </div> </a>
 
       </li>
-      <li><a href="order"><i class="fa fa-user"></i><div class='home'>Заказы </div> </a></li>
+      <li><a href="/order"><i class="fa fa-user"></i><div class='home'>Заказы </div> </a></li>
       <li><a href="/FQI"><i class="fa fa-envelope"></i> <div class='home'>FQI </div></a></li>
     </ul>
     <div class="jquery-accordion-menu-footer">
