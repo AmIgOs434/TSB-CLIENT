@@ -124,7 +124,7 @@ function NavBar() {
    
 
 </div>
-
+<div class='display_flex '>
 <div class='display_flex mt-28 '>
 <input type="email" id="inputPassword5"  placeholder="Email" class="form-control form_c in-put1" aria-labelledby="passwordHelpBlock"/>
 <div id='but_email'>
@@ -134,7 +134,7 @@ function NavBar() {
         
     </div>
 </div>
-
+</div>
 
 </div>
 
