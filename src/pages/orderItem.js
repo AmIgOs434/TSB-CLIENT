@@ -6,8 +6,9 @@ import { useNavigate } from 'react-router-dom';
 
 import useState from 'react-usestateref'
 import { get_item_order } from '../http/deviceAPI';
+import { DEVICE_ROUTE } from '../utils/consts';
 const OrderItem = ({order})=>{
-
+    const navigate = useNavigate()
     const [col_dev,setcol_dev,setcol_devRef] = useState()
     const [className1,SetclassName1,SetclassName1Ref] = useState()
     const [items,SetItems,SetItemsRef] = useState(null)
@@ -26,6 +27,7 @@ const OrderItem = ({order})=>{
        
         if(items=== null){
            const response =await get_item_order(order.id) 
+           console.log(response)
             SetItems(response)
           
 
@@ -82,7 +84,7 @@ SetclassName1(className1)
   <div> 
 
   <div class='order_item_img'>
-      <img src={item.img}/>
+      <img src={item.img}  onClick={()=> navigate(DEVICE_ROUTE + '/' + item.deviceId)}/>
       <div class='order_item_info_0'>
         <div class='displa_'>
 
