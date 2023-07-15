@@ -114,6 +114,7 @@ const comparison = async() =>{
     
    
     if (SetKodRef.current===parseInt(SetKod_klientRef.current)){
+         const changed_user = await putEmail(SetuserIdRef.current,SetEmailRef.current) 
         const user__ =  await fetchUserByEmail(SetuserIdRef.current,SetEmailRef.current) 
        
             svg2_.addClass('display_flex')
